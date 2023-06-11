@@ -4,10 +4,12 @@
   --white: #ffffff;
   --pink: #ff0095a9;
   --purple: rgb(92, 47, 217);
+  --DarkPurp: rgb(22, 32, 48);
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--DarkPurp);
 }
 
 /* Nav */
@@ -21,11 +23,14 @@ body {
   background-color: var(--purple);
   color: var(--white);
 }
+h1 {
+  margin: 20px 5px 20px;
+  font-size: 60px;
+}
 #my-name {
   color: var(--white);
   font-size: 50px;
 }
-
 
 
  .navbar-links {
@@ -43,17 +48,27 @@ body {
    color: var(--blue);
 }
 .about-me {
-  color: var(--black);
-  position: center;
+  color: var(--white);
+  display: flex;
   justify-content: center;
-  
-
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
 }
-h1 {
-  margin: 20px 5px 20px;
+
+.about-me h2 {
   font-size: 60px;
+  text-align: center;
 }
 
+.about-me p {
+  font-size: 20px;
+  padding: 5px;
+}
+
+img {
+  width: 200px;
+}
 
 .work-boxes {
   display: flex;
