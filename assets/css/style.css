@@ -63,7 +63,7 @@ h1 {
 
 .about-me p {
   font-size: 20px;
-  padding: 5px;
+  padding: 20px;
 }
 
 img {
@@ -146,7 +146,7 @@ img {
 
 
 
-
+  
 footer {
   display: flex;
   justify-content: center;
