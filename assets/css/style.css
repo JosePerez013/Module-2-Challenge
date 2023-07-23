@@ -3,7 +3,7 @@
   --black: #000000;
   --white: #ffffff;
   --pink: #ff0095a9;
-  --purple: rgb(92, 47, 217);
+  --purple: rgb(20, 22, 49);
   --DarkPurp: rgb(22, 32, 48);
 }
 
@@ -74,79 +74,52 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 1250px;
+  justify-content: center;
 }
 
-.main-project-box {
-  height: 250px;
-  width: 100%;
-  border: var(--jewel) 5px solid;
-  background-image: url(../images/bi-background-black.png);
-  margin-bottom: 20px;
-}
-
-#work h5 {
-  color: var(--light);
+#work h2 {
+  color: var(--white);
   font-size: 50px;
   padding: 10px 0px 5px 15px;
 }
 
 #work p {
-  color: var(--light);
+  color: var(--white);
   font-size: 25px;
   padding: 10px 0px 5px 15px;
 }
 
-.main-project-box:hover {
-  background: var(--backgroundgradient);
-  box-shadow: var(--box-shadow);
-  opacity: .5;
-  background-image: url(../images/bi-background-black.png);
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    color: var(--white);
+}
+.project-box {
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    flex: 1 0 45%;
+    background-image: url(../images/purp\ back.jpg);
+    color: var(--white);
+}
+.project-box h3 {
+    margin-top: 0;
+    color: var(--white);
+}
+.project-box a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.project-box a:hover {
+    background-color: var(--DarkPurp);
 }
 
-.side-project-boxes {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: stretch;
-}
-
-.side-project-box {
-  max-height: 225px;
-  max-width: 225px;
-  padding: 25px;
-  border: var(--dark) 5px solid;
-  background-image: url(../images/bi-background-black.png);
-  margin-right: 25px;
-  margin-bottom: 25px;
-}
-
-.side-project-box:hover {
-  background: var(--backgroundgradient);
-  box-shadow: var(--box-shadow);
-  opacity: .5;
-  background-image: url(../images/bi-background-black.png);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 footer {
   display: flex;
   justify-content: center;
@@ -155,7 +128,6 @@ footer {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 
 #contact-me {
   display: flex;
@@ -186,4 +158,67 @@ footer {
 
 .contact-links a:hover {
   color: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+  /* Nav */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  #my-name {
+    font-size: 30px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* About me section */
+  .about-me {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Work section */
+
+#work h2 {
+  font-size: 60px;
+  text-align: center;
+  color: var(--white);
+}
+  .project-row {
+    justify-content: center;
+  }
+
+  .project-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .side-project-boxes {
+    justify-content: center;
+  }
+
+  .side-project-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  /* Contact section */
+  #contact-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #contact-me h2 {
+    font-size: 2rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
