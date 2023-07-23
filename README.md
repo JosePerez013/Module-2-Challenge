@@ -17,12 +17,15 @@ To access my portfolio click the link provided on GitPages deployment.
 
 Links in the Navbar to search in the page. Clicking on the will take you to their specific section.
 Resume needs to be added.
+
 ![navbar](assets/images/navbar.png)
 
 Heading over to the Work section hover over the buttons and click to be directed to my projects.
+
 ![work](assets/images/work.png)
 
 Heading down to the contact section, there are 4 ways of contacting me click any link and reach out to me.
+
 ![contact](assets/images/contact.png)
 
 ## Credits
