@@ -11,6 +11,8 @@
 
 Live Deployment on GitHub pages. No installation needed.
 
+Link: https://joseperez013.github.io/Module-2-Challenge/
+
 ## Usage
 
 To access my portfolio click the link provided on GitPages deployment.
@@ -30,6 +32,7 @@ Heading down to the contact section, there are 4 ways of contacting me click any
 
 ## Credits
 Stackover Flow posts really helped me with completing this project.
+
 https://stackoverflow.com/
 
 ## License
